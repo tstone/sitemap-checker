@@ -2,13 +2,14 @@ require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default)
 require 'xmlsimple'
+require 'benchmark'
 Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
 
 # parse args
 
 args = {
 	domain: "",
-	delay: 5 # in seconds
+	delay: 1 # in seconds
 }
 
 ARGV.each_with_index do |arg, i|
