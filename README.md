@@ -5,7 +5,7 @@ Checks each `<url>` and `<image:image>` in a sitemap to verify the resource is a
 
 ### Rules ###
 
-Each url and image is checked.  A resource is considered "passing" if it returns an HTTP status code under 400 (ie. varous types of redirects are counted as success).
+Each url and image is checked.  A resource is considered "passing" if it returns an HTTP status code under 400 (ie. various types of 300-level redirects are counted as success).
 
 ### Usage ###
 
