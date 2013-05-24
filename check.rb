@@ -2,7 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default)
 require 'xmlsimple'
-Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| puts file; require file }
+Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
 
 # parse args
 

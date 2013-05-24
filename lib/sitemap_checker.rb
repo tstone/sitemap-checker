@@ -60,12 +60,18 @@ class SitemapChecker
     images = []
 
     sitemap["url"].each do |url|
-      url["loc"].each do |loc|
-        urls << loc
+      if url.has_key?("loc")
+        url["loc"].each do |loc|
+          urls << loc
+        end
       end
-      url["image"].each do |image|
-        image["loc"].each do |loc|
-          images << loc
+      if url.has_key?("image")
+        url["image"].each do |image|
+          if image.has_key?("loc")
+            image["loc"].each do |loc|
+              images << loc
+            end
+          end
         end
       end
     end
