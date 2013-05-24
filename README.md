@@ -1,7 +1,7 @@
 sitemap-checker
 ===============
 
-Checks each `<url>` and `<image>` in a sitemap to verify the resource is accessible.
+Checks each `<url>` and `<image:image>` in a sitemap to verify the resource is accessible.
 
 ### Rules ###
 
