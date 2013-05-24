@@ -9,10 +9,15 @@ Each url and image is checked.  A resource is considered "passing" if it returns
 
 ### Usage ###
 
-Run the script from the command line.  The first argument is the domain to check.  The second argument is the delay in seconds between requests.
+Run the script from the command line.  The first argument is the domain to check.  The second argument is the delay in seconds between requests.  The [delay] argument is optional.  It defaults to 1 second.
 
 	$ ruby check.rb [domain] [delay]
 
 #### Example #####
 
 	$ ruby check.rb example.com 5
+
+### Tests ###
+
+Todo: Add them.
+
